@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recruiter Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">💼 Recruiter Portal</div>
+  <nav>
+    <ul>
+      <li><a href="#jobs">Jobs</a></li>
+      <li><a href="#talent">Talent Search</a></li>
+      <li><a href="#events">Events</a></li>
+      <li>
+        <div class="profile-dropdown">
+          <button class="profile-dropbtn">Profile ▼</button>
+          <div class="profile-dropdown-content">
+            <a href="modify-profile.html">Update Profile</a>
+            <a href="view-profile.html">View Profile</a>
+          </div>
+        </div>
+      </li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+  <section class="hero">
+    <h1>Welcome, Recruiter!</h1>
+    <p>Find the best talent and connect with the university.</p>
+  </section>
+
+  <section id="jobs" class="section">
+    <h2>Job Postings</h2>
+    <div class="cards">
+      <div class="card">Post new job opening</div>
+      <div class="card">Manage job applications</div>
+    </div>
+  </section>
+
+  <section id="talent" class="section">
+    <h2>Talent Search</h2>
+    <div class="cards">
+      <div class="card">🔍 Search student resumes</div>
+      <div class="card">🌟 View top performers</div>
+    </div>
+  </section>
+
+  <section id="events" class="section">
+    <h2>Recruitment Events</h2>
+    <div class="cards">
+      <div class="card">📅 Career Fair – Oct 2025</div>
+      <div class="card">📅 On-campus Interviews – Nov 2025</div>
+    </div>
+  </section>
+
+  <section id="profile" class="section">
+    <h2>Your Profile</h2>
+    <div class="profile-card">
+      <p><strong>Name:</strong> Jane HR</p>
+      <p><strong>Role:</strong> Recruiter</p>
+      <p><strong>Email:</strong> jane.hr@company.com</p>
+    </div>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

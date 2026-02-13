@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Institute Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="navbar">
+  <div class="logo">🏫 Institute Panel</div>
+  <nav>
+    <ul>
+      <li><a href="#updates">Updates</a></li>
+      <li><a href="#alumni">Alumni Network</a></li>
+      <li><a href="#partnerships">Partnerships</a></li>
+      <li>
+        <div class="profile-dropdown">
+          <button class="profile-dropbtn">Profile ▼</button>
+          <div class="profile-dropdown-content">
+            <a href="modify-profile.html">Update Profile</a>
+            <a href="view-profile.html">View Profile</a>
+          </div>
+        </div>
+      </li>
+      <li><button id="uploadAlumniBtn" class="nav-action-btn">Upload-batch-file</button></li>
+      <li><a href="#" id="logoutBtn">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <section class="hero">
+    <h1>Welcome, Institute!</h1>
+    <p>Manage alumni, students, and recruiters in one place.</p>
+  </section>
+
+  <section id="updates" class="section">
+    <h2>Institute Updates</h2>
+    <div class="cards">
+      <div class="card">📢 New semester starts Jan 2026</div>
+      <div class="card">🏆 Institute ranked top 10 nationwide</div>
+    </div>
+  </section>
+
+  <section id="alumni" class="section">
+    <h2>Alumni Network</h2>
+    <div class="cards">
+      <div class="card">👨‍🎓 Track alumni achievements</div>
+      <div class="card">📞 Strengthen alumni relations</div>
+    </div>
+  </section>
+
+  <section id="partnerships" class="section">
+    <h2>Partnerships</h2>
+    <div class="cards">
+      <div class="card">🤝 Collaboration with MIT</div>
+      <div class="card">🤝 MoU with Microsoft</div>
+    </div>
+  </section>
+
+  <section id="profile" class="section">
+    <h2>Your Profile</h2>
+    <div class="profile-card">
+      <p><strong>Name:</strong> Admin</p>
+      <p><strong>Role:</strong> Institute</p>
+      <p><strong>Email:</strong> admin@univ.edu</p>
+    </div>
+  </section>
+
+  <!-- Upload Modal -->
+  <div id="uploadModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal-btn">&times;</span>
+      <h2>Manage Alumni Batches</h2>
+      <p>Your created batches will appear here. You can then upload a student CSV for each one.</p>
+
+      <div id="batch-list-container">
+        <!-- Batches will be dynamically added here -->
+      </div>
+
+      <form id="addBatchForm" class="add-batch-form">
+        <input type="text" id="newBatchName" placeholder="Enter New Batch Name (e.g., 2021-2025)" required />
+        <button type="submit" class="btn-secondary">Add Batch</button>
+      </form>
+      <button id="doneBtn" class="btn-primary">Done</button>
+    </div>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

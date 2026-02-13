@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🎓 Alumni Connect</div>
+    <nav>
+      <ul>
+        <li><a href="#activity">Activity</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#mentorship">Mentorship</a></li>
+        <li>
+        <div class="profile-dropdown">
+          <button class="profile-dropbtn">Profile ▼</button>
+          <div class="profile-dropdown-content">
+            <a href="modify-profile.html">Update Profile</a>
+            <a href="view-profile.html">View Profile</a>
+          </div>
+        </div>
+      </li>
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome, Alumni!</h1>
+    <p>Stay connected, inspire students, and grow your network.</p>
+  </section>
+
+  <section id="activity" class="section">
+    <h2>Alumni Activity</h2>
+    <div class="cards">
+      <div class="card">🏆 Jane Doe awarded “Best Innovator 2025”</div>
+      <div class="card">💡 Alumni started new mentorship program</div>
+      <div class="card">🎉 Alumni meet scheduled next month</div>
+    </div>
+  </section>
+
+  <section id="events" class="section">
+    <h2>Upcoming Events</h2>
+    <div class="cards">
+      <div class="card">📅 Alumni Meet – Sept 20, 2025</div>
+      <div class="card">📅 Networking Night – Oct 2, 2025</div>
+    </div>
+  </section>
+
+  <section id="mentorship" class="section">
+    <h2>Mentorship</h2>
+    <div class="cards">
+      <div class="card">👨‍🏫 Mentor a student</div>
+      <div class="card">📚 Host a guest lecture</div>
+    </div>
+  </section>
+
+  <section id="profile" class="section">
+    <h2>Your Profile</h2>
+    <div class="profile-card">
+      <p><strong>Name:</strong> John Doe</p>
+      <p><strong>Role:</strong> Alumni</p>
+      <p><strong>Email:</strong> john.doe@example.com</p>
+    </div>
+  </section>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

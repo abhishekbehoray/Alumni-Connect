@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alumni Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Theme Toggle -->
+  <button id="themeToggle" class="theme-btn">🌙</button>
+
+  <!-- Expanding Circle Effect -->
+  <div id="circleEffect"></div>
+
+  <!-- Welcome Banner -->
+  <div class="welcome">
+    <h1>Welcome to Alumni Connect</h1>
+    <p>Bridging Students, Alumni, Recruiters & Institutes</p>
+  </div>
+
+  <!-- Stats Section -->
+  <div class="stats">
+    <div><span>5000+</span><p>Alumni</p></div>
+    <div><span>200+</span><p>Recruiters</p></div>
+    <div><span>50+</span><p>Institutes</p></div>
+  </div>
+
+  <!-- Login Section -->
+  <div class="card">
+    <div class="roles">
+      <h2>Who are you?</h2>
+      <button class="role-btn" data-role="Recruiter">Recruiter</button>
+      <button class="role-btn" data-role="Alumni">Alumni</button>
+      <button class="role-btn" data-role="Student">Student</button>
+      <button class="role-btn" data-role="Institute">Institute</button>
+    </div>
+
+    <div id="loginForm" class="login hidden">
+      <button id="closeForm" class="close-btn">✖</button>
+      <h2 id="formTitle">Login</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Password" required />
+        <button type="submit" class="login-btn">Login</button>
+      </form>
+      <p>Don’t have an account? <a href="#" id="signUpLink">Sign Up</a></p>
+<!-- ...existing code... -->
+
+  <!-- Sign Up Popups (hidden by default) -->
+  <div id="signUpRecruiter" class="signup-popup hidden">
+    <button class="close-btn" onclick="closeSignUp()">✖</button>
+    <h2>Recruiter Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Company Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <div id="signUpAlumni" class="signup-popup hidden">
+    <button class="close-btn" onclick="closeSignUp()">✖</button>
+    <h2>Alumni Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <input type="text" placeholder="Graduation Year" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <div id="signUpStudent" class="signup-popup hidden">
+    <button class="close-btn" onclick="closeSignUp()">✖</button>
+    <h2>Student Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <input type="text" placeholder="Institute" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+  <div id="signUpInstitute" class="signup-popup hidden">
+    <button class="close-btn" onclick="closeSignUp()">✖</button>
+    <h2>Institute Sign Up</h2>
+    <form>
+      <input type="text" placeholder="Institute Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+<!-- ...existing code... -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

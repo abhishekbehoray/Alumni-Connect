@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modify Profile</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">🌐 Portal Panel</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="institute.html#updates">Updates</a></li>
+        <li><a href="institute.html#alumni">Alumni Network</a></li>
+        <li><a href="institute.html#partnerships">Partnerships</a></li>
+        <li>
+          <div class="profile-dropdown">
+            <button class="profile-dropbtn">Profile ▼</button>
+            <div class="profile-dropdown-content">
+              <a href="modify-profile.html">Modify Profile</a>
+              <a href="view-profile.html">View Profile</a>
+            </div>
+          </div>
+        </li>
+  
+        <li><a href="#" id="logoutBtn">Logout</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="section">
+  <h2>Modify Profile</h2>
+  <div class="profile-card">
+    <form id="modifyProfileForm">
+      <label for="name"><strong>Name:</strong></label>
+      <input type="text" id="name" name="name" value="Admin" required /><br><br>
+      <label for="email"><strong>Email:</strong></label>
+      <input type="email" id="email" name="email" value="admin@univ.edu" required /><br><br>
+      <button type="submit" class="btn-primary">Save Changes</button>
+    </form>
+    <a href="institute.html" class="btn-secondary" style="margin-top:20px;display:inline-block;">← Back to Dashboard</a>
+  </div>
+</section>
+  <script>
+    // Simple JS to show a save message
+    document.getElementById('modifyProfileForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Profile updated!');
+      // Here you would add AJAX or localStorage logic for real saving
+    });
+  </script>
+  <script src="dashboard.js"></script>
+</body>
+</html>
